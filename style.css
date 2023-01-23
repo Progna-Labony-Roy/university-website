@@ -1,11 +1,11 @@
-.header{
+.header {
     height: 720px;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,15,0.7),rgba(4,9,15,0.7)),url(images/photo-1523050854058-8df90110c9f1.avif);  
+    background-image: linear-gradient(rgba(4, 9, 15, 0.7), rgba(4, 9, 15, 0.7)), url(images/photo-1523050854058-8df90110c9f1.avif);
     background-size: cover;
 }
 
-.navbar{
+.navbar {
     width: 90%;
     margin: 0px auto 0px;
     padding: 10px;
@@ -13,57 +13,57 @@
     justify-content: space-between;
 }
 
-.name-logo{
+.name-logo {
     display: flex;
 }
 
-.name{
+.name {
     color: white;
     margin: 12px 10px 0px;
     font-size: 24px;
 }
 
-.nav-logo{
+.nav-logo {
     height: 60px;
     width: 60px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     text-decoration: none;
 }
 
-.nav-item{
+.nav-item {
     margin: 16px 0px 0px 12px;
     font-size: 17px;
     text-decoration: none;
     color: white;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     text-decoration: underline;
 }
 
 
-.header-text{
+.header-text {
     color: white;
     max-width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
 }
 
-.header-text p{
+.header-text p {
     font-size: 18px;
 }
 
-.about-button{
+.about-button {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -77,72 +77,163 @@
 }
 
 
-.about-button:hover{
+.about-button:hover {
     background-color: #E67E22;
     border: 1px solid #E67E22;
     transition: 1s;
 }
 
-/* footer style */
-.footer{
-    background: rgb(230, 223, 223);
+/* Courses style */
+.course-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.footer-heading{
+.courses {
+    max-width: 90%;
+    margin: auto;
+}
+
+.all-course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.course {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* review style */
+.review-heading {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.review-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 60%;
+    margin: 30px auto 100px;
+}
+
+.review {
+    background: #FADBD8;
+    padding: 0px 20px 20px;
+    display: flex;
+}
+
+
+.image {
+    height: 100px;
+    width: 100px;
+    padding: 20px 20px 0px 0px;
+}
+
+
+.reviewer-name {
+    font-weight: 700;
+}
+
+.orange {
+    color: orange;
+}
+
+/* footer style */
+.footer {
+    background: rgb(230, 223, 223);
+    text-align: center;
+    margin-top: 120px;
+}
+
+.footer-heading {
     padding-top: 60px;
 }
 
-.footer-text{
+.footer-text {
     font-size: 17px;
 }
 
-.icons i{
+.icons i {
     padding: 0px 10px 40px;
 }
 
-.copyright{
+.copyright {
     padding-bottom: 10px;
 }
 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .review-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 60%;
+        margin: 30px auto 100px;
+    }
+}
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    .header{
+    .header {
         height: 560px;
     }
 
-    .navbar{
+    .header-text {
+        top: 40%;
+    }
+
+    .navbar {
         width: 95%;
         padding: 10px;
     }
 
-    .name{
+    .name {
         display: none;
     }
-    
-    .nav-logo{
+
+    .nav-logo {
         height: 50px;
         width: 50px;
     }
- 
-    
-    .nav-item{
+
+
+    .nav-item {
         margin: 16px 0px 0px 12px;
         font-size: 16px;
         text-decoration: none;
         color: white;
     }
 
-    .header-text h1{
-        font-size: 35px;
+    .header-text h1 {
+        font-size: 32px;
     }
-    
-    .header-text{
+
+    .header-text {
         max-width: 100%;
         font-size: 13px;
     }
 
-    .about-button{
+    .about-button {
         display: inline-block;
         text-decoration: none;
         color: white;
@@ -156,20 +247,57 @@
     }
 
 
-    .footer-heading{
+    /* Courses style */
+    .course-title {
+        margin-top: 70px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .courses {
+        max-width: 75%;
+    }
+
+    .all-course {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* review style */
+    .review-heading {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .review-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 65%;
+        margin: 30px auto 100px;
+    }
+
+    .review {
+        padding: 2px 22px 22px;
+    }
+
+
+    /* Footer */
+    .footer-heading {
         padding-top: 50px;
     }
-    
-    .footer-text{
+
+    .footer-text {
         margin: 0px 35px;
         font-size: 15px;
     }
-    
-    .icons i{
+
+    .icons i {
         padding: 15px 10px 40px;
     }
-    
-    .copyright{
+
+    .copyright {
         padding-bottom: 10px;
     }
 }
