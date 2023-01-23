@@ -1,0 +1,36 @@
+.header{
+    height: 720px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,15,0.7),rgba(4,9,15,0.7)),url(images/photo-1523050854058-8df90110c9f1.avif);  
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-logo{
+    display: flex;
+}
+
+.name{
+    color: white;
+    margin: 12px 10px 0px;
+    font-size: 24px;
+}
+
+.nav-logo{
+    height: 60px;
+    width: 60px;
+}
+
+.nav-items{
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+}
