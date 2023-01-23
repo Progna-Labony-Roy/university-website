@@ -55,21 +55,62 @@
     text-align: center;
 }
 
+.header-text h1{
+    font-size: 60px;
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+.header-text p{
+    font-size: 18px;
+}
 
+.about-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-
+.about-button:hover{
+    background-color: #E67E22;
+    border: 1px solid #E67E22;
+    transition: 1s;
 }
 
+/* footer style */
+.footer{
+    background: rgb(230, 223, 223);
+    text-align: center;
+}
+
+.footer-heading{
+    padding-top: 60px;
+}
+
+.footer-text{
+    font-size: 17px;
+}
+
+.icons i{
+    padding: 0px 10px 40px;
+}
+
+.copyright{
+    padding-bottom: 10px;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+    .header{
+        height: 560px;
+    }
+
     .navbar{
         width: 95%;
         padding: 10px;
@@ -90,5 +131,45 @@
         font-size: 16px;
         text-decoration: none;
         color: white;
+    }
+
+    .header-text h1{
+        font-size: 35px;
+    }
+    
+    .header-text{
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .about-button{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 8px 18px;
+        font-size: 16px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+
+    .footer-heading{
+        padding-top: 50px;
+    }
+    
+    .footer-text{
+        margin: 0px 35px;
+        font-size: 15px;
+    }
+    
+    .icons i{
+        padding: 15px 10px 40px;
+    }
+    
+    .copyright{
+        padding-bottom: 10px;
     }
 }
